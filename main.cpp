@@ -54,37 +54,41 @@ while (k < 9) {
       }
       if (k==4) {
         mas[2][0]=n;
-        sort2(mas[0][0],mas[0][1]);
-        sort3(mas[0][0],mas[1][0],mas[2][0]);
-        sort2(mas[1][1],mas[1][0]);
+        sort3(mas[0][0], mas[1][0], mas[2][0]);
+				sort2(mas[1][0],mas[1][1]);
+				sort2(mas[0][0],mas[0][1]);
+				sort3(mas[0][0], mas[1][0], mas[2][0]);
       }
       if (k==5){
         mas[2][1]=n;
         
-        sort3(mas[0][0],mas[1][0],mas[2][0]);
-        sort2(mas[0][0],mas[0][1]);
-        sort3(mas[0][1],mas[1][1],mas[2][1]);
-        sort2(mas[1][1],mas[1][0]);
+        sort2(mas[2][0],mas[2][1]);
+			  sort3(mas[0][0], mas[1][0], mas[2][0]);
+				sort3(mas[0][1], mas[1][1], mas[2][1]);
+				sort2(mas[2][0],mas[2][1]);
+				sort2(mas[1][0],mas[1][1]);
+				sort2(mas[0][0],mas[0][1]);	
       }
       if (k==6) {
         mas[2][2]=n;
-        sort3(mas[0][0],mas[1][0],mas[2][0]);
-        sort2(mas[0][0],mas[0][1]);
-        sort3(mas[0][1],mas[1][1],mas[2][1]);
-        sort2(mas[1][0],mas[1][1]);
-        sort3(mas[2][0],mas[2][1],mas[2][2]);
+        sort3(mas[2][0], mas[2][1], mas[2][2]);
+			  sort3(mas[0][0], mas[1][0], mas[2][0]);
+				sort3(mas[0][1], mas[1][1], mas[2][1]);
+				sort3(mas[2][0], mas[2][1], mas[2][2]);
+				sort2(mas[0][0],mas[0][1]);
+				sort2(mas[1][0],mas[1][1]);
         
         
         
       }
       if (k==7) {
         mas[1][2]=n;
-        sort2(mas[0][0],mas[0][1]);
-        sort2(mas[1][2],mas[2][2]);
-        sort3(mas[0][1],mas[1][1],mas[2][1]);
-        sort3(mas[0][0],mas[1][0],mas[2][0]);
-        sort3(mas[1][0],mas[1][1],mas[1][2]);
-        sort3(mas[2][0],mas[2][1],mas[2][2]);
+        sort3(mas[1][0], mas[1][1], mas[1][2]);
+				sort3(mas[2][0], mas[2][1], mas[2][2]);
+				sort2(mas[0][0], mas[0][1]);
+				sort3(mas[0][0], mas[1][0], mas[2][0]);
+				sort3(mas[0][1], mas[1][1], mas[2][1]);
+				sort2(mas[1][2], mas[2][2]);
         
       }
       if (k==8) {
